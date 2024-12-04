@@ -23,7 +23,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 4rem;
@@ -49,4 +49,56 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+
+/* Nav - Bar */
+.nav-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  justify-content: space-between;
+  margin: 1rem 0.5rem;
+  padding: 1rem 1rem;
+}
+.nav-bar-menu,
+.nav-bar-logo {
+  height: inherit;
+}
+/* General Button */
+button {
+  background-color: var(--color-accent);
+  border-radius: 4rem;
+  border: none;
+  box-sizing: border-box;
+  height: 4rem;
+  margin: 4rem 3rem;
+  padding: 1.5rem 0;
+  width: 40rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/* Banner Section */
+.banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  justify-content: space-between;
+  text-align: center;
+  background-color: black;
+}
+.banner-body {
+  color: #b9c3cf;
+}
+.banner-heading {
+  color: white;
+}
+.banner-image {
+  /* height: 50vh; */
+  max-height: 60vh;
+  max-width: 70%;
+  object-fit: cover;
+  /* overflow: hidden; */
 }
