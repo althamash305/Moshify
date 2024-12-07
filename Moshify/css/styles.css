@@ -149,3 +149,45 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Buttons */
+.button {
+  border-radius: 4rem;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0rem;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.button--accent {
+  color: white;
+  background-color: var(--color-accent);
+}
+.button--secondary {
+  color: white;
+  background-color: var(--color-secondary);
+}
+.button--outline {
+  color: var(--color-headings);
+  background-color: white;
+  border: 2px solid var(--color-headings);
+  transition: background-color 0.4s, color 0.4s;
+}
+.button--outline:hover {
+  color: white;
+  background-color: var(--color-headings);
+}
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
