@@ -104,3 +104,30 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  color: var(--color-headings);
+}
+.list--inline .list__item {
+  padding-left: 0;
+  display: inline-block;
+  /* background-color: gold; */
+  margin: 2rem;
+}
+
+.list--tick {
+  list-style-image: url("/Moshify/icons/tick.svg");
+  padding-left: 3rem;
+}
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list-tick .list__item {
+    padding-left: 0;
+  }
+}
