@@ -318,3 +318,20 @@ a {
   top: -0.5rem;
   right: 2rem;
 }
+
+/* Media Object */
+.media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.media__image {
+  margin-top: 1rem;
+}
+.media__body {
+  flex-grow: 1;
+}
+.media__title {
+  margin: 0;
+}
