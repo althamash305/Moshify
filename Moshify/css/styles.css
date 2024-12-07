@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 4rem;
 }
 /* Typography */
 html {
@@ -152,7 +154,7 @@ a {
 
 /* Buttons */
 .button {
-  border-radius: 4rem;
+  border-radius: var(--border-radius);
   border: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -191,3 +193,47 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Inputs */
+.input {
+  /* border: none; */
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+  color: var(--color-headings);
+  outline: none;
+  border: 1px solid var(--color-border);
+}
+.input::placeholder {
+  color: #cdcbc7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+/* Input Group */
+.input-group {
+  background-color: gold;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 60rem;
+}
+.input-group .input {
+  margin: 5px;
+  flex-grow: 1;
+  border: none;
+}
+.input-group .button {
+  margin: 5px;
+}
+/* .input-group .button::before {
+  content: url("../icons/search.svg");
+  height: 10px;
+  width: 10px;
+} */
