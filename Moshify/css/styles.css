@@ -237,3 +237,27 @@ a {
   height: 10px;
   width: 10px;
 } */
+
+/* Cards */
+.card {
+  border-radius: 0.8rem;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+}
+.card__body,
+.card__header {
+  padding: 2rem 3rem;
+}
+.card__body {
+  color: var(--color-headings);
+  font-weight: 400;
+}
+.card--primary .card__header {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+  color: white;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
