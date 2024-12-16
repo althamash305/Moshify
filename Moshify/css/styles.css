@@ -663,3 +663,33 @@ a {
     grid-template-rows: repeat(2, 6rem);
   }
 }
+
+/* Plans Block  */
+.block-plans {
+  /* background-color: gold; */
+  display: grid;
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+.block-plans .plan {
+  transition: all 0.3s ease-out;
+}
+.block-plans .plan:hover {
+  transform: scale(1.06, 1.06);
+}
+@media screen and (width>768px) {
+  .block-plans {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    /* column-gap: 4rem; */
+    /* grid-template-rows: repeat(2, 10rem); */
+  }
+  .block-plans .plan--popular {
+    transform: scale(1.1, 1.1);
+  }
+  .block-plans .plan--popular:hover {
+    transform: scale(1.16, 1.16);
+  }
+}
