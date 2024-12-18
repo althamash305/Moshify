@@ -9,6 +9,10 @@
   --border-radius: 4rem;
 }
 /* Typography */
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
 html {
   font-size: 62.5%;
 }
@@ -360,6 +364,7 @@ a {
 }
 .media__title {
   margin: 0;
+  font-size: 2.8rem;
 }
 
 /* Quote */
@@ -532,12 +537,17 @@ a {
   background-color: black;
   color: #7b858b;
 }
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
+  color: white;
+}
 .block--dark .block__heading {
   color: white;
 }
 .block--skew-right,
 .block--skew-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(var(--padding-vertical) + 10rem);
 }
 .block--skew-left {
   clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
@@ -733,5 +743,29 @@ a {
   .feature__image {
     grid-area: feature__image;
     width: 1fr;
+  }
+}
+
+/* ShowCase Block */
+.block-showcase__image {
+  width: 100%;
+}
+.block-showcase {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 90%);
+}
+.block-showcase .media__description {
+  color: #7b858b;
+}
+.block-showcase .media {
+  margin-bottom: 8rem;
+}
+@media screen and (width>768px) {
+  .block-showcase__image {
+    width: auto;
+    max-width: 700px;
+    justify-self: end;
+  }
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
   }
 }
