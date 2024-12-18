@@ -128,7 +128,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url("/Moshify/icons/tick.svg");
+  list-style-image: url("../icons/tick.svg");
   padding-left: 3rem;
 }
 .list--tick .list__item {
@@ -257,11 +257,14 @@ a {
   margin: 5px;
   flex-grow: 1;
   flex-shrink: 1;
+  width: 0;
   border: none;
   padding: 1.5rem 2rem;
 }
 .input-group .button {
   margin: 5px;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 /* Cards */
@@ -660,7 +663,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -835,4 +838,13 @@ a {
   .footer {
     font-size: 1.5rem;
   }
+}
+
+/* Callout Positioning */
+.callout {
+  /* box-sizing: border-box; */
+  /* margin: 0rem; */
+  max-width: 1090px;
+  position: relative;
+  top: 5rem;
 }
